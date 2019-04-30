@@ -16,6 +16,8 @@ common = require('./core/server/lib/common');
 urlService = require('./core/server/services/url');
 parentApp = express();
 
+
+
 debug('Initialising Ghost');
 ghost().then(function (ghostServer) {
     // Mount our Ghost instance on our desired subdirectory path if it exists.
